@@ -1,0 +1,5 @@
+package ras
+
+object Main {
+
+}
