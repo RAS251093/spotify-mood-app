@@ -10,7 +10,8 @@ lazy val root = (project in file("."))
     libraryDependencies ++= List(
       "org.scala-js" %%% "scalajs-dom" % "2.8.0",
       "com.lihaoyi" %%% "utest" % "0.7.4" % "test",
-      "io.spray" %%  "spray-json" % "1.3.6"
+      "io.spray" %%  "spray-json" % "1.3.6",
+      "pt.kcry" %%% "sha" % "2.0.1"
     ),
     testFrameworks += new TestFramework("utest.runner.Framework"),
     scalaJSUseMainModuleInitializer := true
