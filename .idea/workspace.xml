@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a37d3714-3d80-484e-9179-7363398a8d7d" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__pt_kcry_sha_sjs1_2_13_2_0_1_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/spotify-mood-app-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spotify-mood-app-build.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/spotify-mood-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/spotify-mood-app.iml" afterDir="false" />
+    <list default="true" id="a37d3714-3d80-484e-9179-7363398a8d7d" name="Changes" comment="add codeChallenge">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ras/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ras/spotify/redirectToSpotifyAuthorise.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/spotify/redirectToSpotifyAuthorise.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701376212760</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add codeChallenge">
+      <created>1708634635621</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708634635621</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add codeChallenge" />
+    <option name="LAST_COMMIT_MESSAGE" value="add codeChallenge" />
   </component>
 </project>

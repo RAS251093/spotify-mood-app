@@ -1,0 +1,52 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(fastLinkJS, None, None)[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastLinkJS[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/rob/IdeaProjects/spotify-mood-app/target/scala-2.13/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mdone compiling[0m
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/rob/IdeaProjects/spotify-mood-app/target/scala-2.13/spotify-mood-app-fastopt[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method static java.security.MessageDigest.getInstance(java.lang.String)java.security.MessageDigest[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.generateCodeChallenge(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.redirectToAuthCodeFLow(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.spotify.redirectToSpotifyAuthorise$.updateUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.ras$ui$BuildUI$$$anonfun$setupUI$1(org.scalajs.dom.MouseEvent)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.setupUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.Main$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static ras.Main.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.spotify.redirectToSpotifyAuthorise$[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.ui.BuildUI[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.Main$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent method java.security.MessageDigest.digest([byte)[byte[0m
+[0m[[0m[31merror[0m] [0m[0m  dispatched from java.security.MessageDigest.digest([byte)[byte[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.generateCodeChallenge(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.redirectToAuthCodeFLow(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.spotify.redirectToSpotifyAuthorise$.updateUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.ras$ui$BuildUI$$$anonfun$setupUI$1(org.scalajs.dom.MouseEvent)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.setupUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.Main$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static ras.Main.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.spotify.redirectToSpotifyAuthorise$[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.ui.BuildUI[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.Main$[0m
+[0m[[0m[31merror[0m] [0m[0mReferring to non-existent class java.security.MessageDigest[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.generateCodeChallenge(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from private ras.spotify.redirectToSpotifyAuthorise$.redirectToAuthCodeFLow(java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.spotify.redirectToSpotifyAuthorise$.updateUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.ras$ui$BuildUI$$$anonfun$setupUI$1(org.scalajs.dom.MouseEvent)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.ui.BuildUI.setupUI()void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from ras.Main$.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from static ras.Main.main([java.lang.String)void[0m
+[0m[[0m[31merror[0m] [0m[0m  called from core module module initializers[0m
+[0m[[0m[31merror[0m] [0m[0minvolving instantiated classes:[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.spotify.redirectToSpotifyAuthorise$[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.ui.BuildUI[0m
+[0m[[0m[31merror[0m] [0m[0m  ras.Main$[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 37 -- invalidated: 2 -- trees read: 37[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0mThere were linking errors[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mfastLinkJS[0m) There were linking errors[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 1 Dec 2023, 15:41:26[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

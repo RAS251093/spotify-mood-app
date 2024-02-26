@@ -1,7 +1,8 @@
 package ras.spotify
 
 import org.scalajs.dom
-import org.scalajs.dom.{URL, URLSearchParams, document}
+import org.scalajs.dom.idb.Request
+import org.scalajs.dom.{Headers, HttpMethod, RequestInit, URL, URLSearchParams, document, fetch, window}
 
 import scala.util.Random
 import scala.concurrent._
@@ -16,26 +17,22 @@ case object redirectToSpotifyAuthorise {
 
   private def redirectToAuthCodeFLow(ClientId: String): Unit = {
     val verifier = generateCodeVerifier()
-    println("verifier is: " + verifier)
     val challenge = generateCodeChallenge(verifier)
-    println("challenge is " + "encrypted: " + challenge + " decrypted: " + dom.window.atob(challenge))
 
     dom.window.localStorage.setItem("verifier", verifier)
 
-    val params = Map(
-      "response_type" -> "code",
-      "client_id" -> s"$ClientId",
-      "scope" -> s"$Scope",
-      "code_challenge_method" -> "5256",
-      "code_challenge" -> s"$challenge",
-      "redirect_uri" -> s"$RedirectUri"
-    )
+    val params = new URLSearchParams()
+    params.append("client_id", s"$ClientId")
+    params.append("response_type", "code")
+    params.append("scope", s"$Scope")
+    params.append("code_challenge_method", "S256")
+    params.append("code_challenge", s"$challenge")
+    params.append("redirect_uri", s"$RedirectUri")
 
-    //authUrl.search = new URLSearchParams(params).toString();
-    //window.location.href = authUrl.toString();
-    AuthUrl.search = new URLSearchParams()
-
-
+    AuthUrl.search = params.toString
+    window.location.href = AuthUrl.toString
+    val urlParams = new URLSearchParams(window.location.search)
+    val code = urlParams.get("code")
   }
 
   private def generateCodeVerifier(): String = {
@@ -56,13 +53,13 @@ case object redirectToSpotifyAuthorise {
       .replaceAll("///g", "_")
   }
 
-  private def getAccessToken(ClientId: String, code: String): Future[String] = {
+/*  private def getAccessToken(ClientId: String, code: String): Future[String] = {
     //TODO: Get access token for code
   }
 
   private def fetchProfile(token: String): Future[Unit] = {
     //TODO: Call web API
-  }
+  }*/
 
   def updateUI(): Unit = {
     redirectToAuthCodeFLow(ClientId)

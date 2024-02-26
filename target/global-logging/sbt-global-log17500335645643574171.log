@@ -1,0 +1,106 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(fastLinkJS, None, None)[0m
+[0m[[0m[33mwarn[0m] [0m[0mbuild source files have changed[0m
+[0m[[0m[33mwarn[0m] [0m[0mmodified files: [0m
+[0m[[0m[33mwarn[0m] [0m[0m  /Users/rob/IdeaProjects/spotify-mood-app/build.sbt[0m
+[0m[[0m[33mwarn[0m] [0m[0mApply these changes by running `reload`.[0m
+[0m[[0m[33mwarn[0m] [0m[0mAutomatically reload the build when source changes are detected by setting `Global / onChangedBuildSource := ReloadOnSourceChanges`.[0m
+[0m[[0m[33mwarn[0m] [0m[0mDisable this warning by setting `Global / onChangedBuildSource := IgnoreSourceChanges`.[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / fastLinkJS[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 8 Scala sources to /Users/rob/IdeaProjects/spotify-mood-app/target/scala-2.13/classes ...[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol.BooleanJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:4:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.{JsValue, RootJsonFormat}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:9:28: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val jsonFormat: RootJsonFormat[ExplicitContentObj] =[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:10:9: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m    new RootJsonFormat[ExplicitContentObj] {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:11:52: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def write(obj: ExplicitContentObj): JsValue = ???[0m
+[0m[[0m[31merror[0m] [0m[0m                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExplicitContentObj.scala:13:31: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def read(json: JsValue): ExplicitContentObj = {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol.StringJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:4:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.{JsValue, RootJsonFormat}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:9:28: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val jsonFormat: RootJsonFormat[ExtUrlsObj] =[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:10:9: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m    new RootJsonFormat[ExtUrlsObj] {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:11:44: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def write(obj: ExtUrlsObj): JsValue = ???[0m
+[0m[[0m[31merror[0m] [0m[0m                                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ExtUrlsObj.scala:13:31: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def read(json: JsValue): ExtUrlsObj = {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:4:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.{JsValue, RootJsonFormat}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:9:28: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val jsonFormat: RootJsonFormat[FollowersObj] =[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:10:9: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m    new RootJsonFormat[FollowersObj] {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:11:46: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def write(obj: FollowersObj): JsValue = ???[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/FollowersObj.scala:13:31: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def read(json: JsValue): FollowersObj = {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:4:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.{JsValue, RootJsonFormat}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:9:28: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val jsonFormat: RootJsonFormat[ImgObj] =[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:10:9: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m    new RootJsonFormat[ImgObj] {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:11:40: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def write(obj: ImgObj): JsValue = ???[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/ImgObj.scala:13:31: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def read(json: JsValue): ImgObj = {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:3:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.DefaultJsonProtocol.StringJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:4:8: not found: object spray[0m
+[0m[[0m[31merror[0m] [0m[0mimport spray.json.{JsValue, RootJsonFormat}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:22:28: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val jsonFormat: RootJsonFormat[UserProfile] =[0m
+[0m[[0m[31merror[0m] [0m[0m                           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:23:9: not found: type RootJsonFormat[0m
+[0m[[0m[31merror[0m] [0m[0m    new RootJsonFormat[UserProfile] {[0m
+[0m[[0m[31merror[0m] [0m[0m        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:24:45: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def write(obj: UserProfile): JsValue = ???[0m
+[0m[[0m[31merror[0m] [0m[0m                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/rob/IdeaProjects/spotify-mood-app/src/main/scala/ras/spotify/model/UserProfile.scala:26:31: not found: type JsValue[0m
+[0m[[0m[31merror[0m] [0m[0m      override def read(json: JsValue): UserProfile = {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m30 errors found[0m
+[0m[[0m[0mdebug[0m] [0m[0mGlobal IR cache stats: reused: 0 -- invalidated: 0 -- trees read: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mForcing garbage collection...[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[31merror[0m] [0m[0mTotal time: 1 s, completed 30 Nov 2023, 18:43:47[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(idea-shell, None, None)[0m

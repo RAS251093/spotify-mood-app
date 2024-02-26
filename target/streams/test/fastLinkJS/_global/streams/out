@@ -1,0 +1,24 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/rob/IdeaProjects/spotify-mood-app/target/scala-2.13/spotify-mood-app-test-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 273288 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 16277 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 296033 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 48152 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 7385 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 596503 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 650418 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 127433 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 7123 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 135080 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 461 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Analyze Modules: 150 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Assemble Modules: 1028 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 1701 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 286936 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 4184 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 852[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 4157[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 302252 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 81939 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total top-level trees: 9876; re-computed: 9876[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: total modules: 1; re-written: 1[0m
