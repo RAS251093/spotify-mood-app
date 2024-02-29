@@ -11,7 +11,7 @@ import scala.scalajs.js.typedarray.byteArray2Int8Array
 
 case object redirectToSpotifyAuthorise {
   val ClientId = "c597644c918c4f008e1cb6f073a7b4fc"
-  val RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html?_ijt=l6pjm8gb23sbi4o1q6ev20a8q4&_ij_reload=RELOAD_ON_SAVE"
+  val RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html"
   val Scope = "user-read-private user-read-email"
   val AuthUrl = new URL("https://accounts.spotify.com/authorize")
 
@@ -32,7 +32,7 @@ case object redirectToSpotifyAuthorise {
     AuthUrl.search = params.toString
     window.location.href = AuthUrl.toString
     val urlParams = new URLSearchParams(window.location.search)
-    val code = urlParams.get("code")
+    val urlCode = urlParams.get("code")
   }
 
   private def generateCodeVerifier(): String = {

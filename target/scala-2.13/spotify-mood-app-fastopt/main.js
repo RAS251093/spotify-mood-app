@@ -9068,7 +9068,7 @@ function $c_Lras_spotify_redirectToSpotifyAuthorise$() {
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl = null;
   $n_Lras_spotify_redirectToSpotifyAuthorise$ = this;
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId = "c597644c918c4f008e1cb6f073a7b4fc";
-  this.Lras_spotify_redirectToSpotifyAuthorise$__f_RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html?_ijt=l6pjm8gb23sbi4o1q6ev20a8q4&_ij_reload=RELOAD_ON_SAVE";
+  this.Lras_spotify_redirectToSpotifyAuthorise$__f_RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html";
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_Scope = "user-read-private user-read-email";
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl = new URL("https://accounts.spotify.com/authorize")
 }
