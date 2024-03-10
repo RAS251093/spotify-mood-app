@@ -6,9 +6,9 @@ import ras.spotify.redirectToSpotifyAuthorise
 
 final class BuildUI() {
 
-  def addClickedMessage(): Unit = {
+/*  def addClickedMessage(): Unit = {
     appendNode(document.body, "p", "You clicked the button!")
-  }
+  }*/
 
   def appendNode(targetNode: dom.Node, nodeType: String, text: String): Unit = {
     val newChild = document.createElement(nodeType)

@@ -1476,9 +1476,10 @@ function $m_jl_StackTrace$StringRE$() {
 }
 /** @constructor */
 function $c_jl_System$Streams$() {
+  this.jl_System$Streams$__f_out = null;
   this.jl_System$Streams$__f_err = null;
   $n_jl_System$Streams$ = this;
-  new $c_jl_JSConsoleBasedPrintStream(false);
+  this.jl_System$Streams$__f_out = new $c_jl_JSConsoleBasedPrintStream(false);
   this.jl_System$Streams$__f_err = new $c_jl_JSConsoleBasedPrintStream(true)
 }
 $c_jl_System$Streams$.prototype = new $h_O();
@@ -3944,6 +3945,34 @@ var $d_ju_regex_PatternCompiler$CompiledCharClass = new $TypeData().initClass({
 });
 $c_ju_regex_PatternCompiler$CompiledCharClass.prototype.$classData = $d_ju_regex_PatternCompiler$CompiledCharClass;
 /** @constructor */
+function $c_Lorg_scalajs_dom_HttpMethod$() {
+  this.Lorg_scalajs_dom_HttpMethod$__f_GET = null;
+  this.Lorg_scalajs_dom_HttpMethod$__f_POST = null;
+  this.Lorg_scalajs_dom_HttpMethod$__f_GET = "GET";
+  this.Lorg_scalajs_dom_HttpMethod$__f_POST = "POST"
+}
+$c_Lorg_scalajs_dom_HttpMethod$.prototype = new $h_O();
+$c_Lorg_scalajs_dom_HttpMethod$.prototype.constructor = $c_Lorg_scalajs_dom_HttpMethod$;
+/** @constructor */
+function $h_Lorg_scalajs_dom_HttpMethod$() {
+  /*<skip>*/
+}
+$h_Lorg_scalajs_dom_HttpMethod$.prototype = $c_Lorg_scalajs_dom_HttpMethod$.prototype;
+var $d_Lorg_scalajs_dom_HttpMethod$ = new $TypeData().initClass({
+  Lorg_scalajs_dom_HttpMethod$: 0
+}, false, "org.scalajs.dom.HttpMethod$", {
+  Lorg_scalajs_dom_HttpMethod$: 1,
+  O: 1
+});
+$c_Lorg_scalajs_dom_HttpMethod$.prototype.$classData = $d_Lorg_scalajs_dom_HttpMethod$;
+var $n_Lorg_scalajs_dom_HttpMethod$;
+function $m_Lorg_scalajs_dom_HttpMethod$() {
+  if ((!$n_Lorg_scalajs_dom_HttpMethod$)) {
+    $n_Lorg_scalajs_dom_HttpMethod$ = new $c_Lorg_scalajs_dom_HttpMethod$()
+  };
+  return $n_Lorg_scalajs_dom_HttpMethod$
+}
+/** @constructor */
 function $c_RTLong(lo, hi) {
   this.RTLong__f_lo = 0;
   this.RTLong__f_hi = 0;
@@ -4487,8 +4516,7 @@ $c_Lras_ui_BuildUI.prototype.setupUI__V = (function() {
   var loginButton = document.createElement("button");
   loginButton.textContent = "Log in with Spotify";
   loginButton.addEventListener("click", ((arg1$2) => {
-    var this$1 = $m_Lras_spotify_redirectToSpotifyAuthorise$();
-    $p_Lras_spotify_redirectToSpotifyAuthorise$__redirectToAuthCodeFLow__T__V(this$1, this$1.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId)
+    $m_Lras_spotify_redirectToSpotifyAuthorise$().updateUI__V()
   }));
   this.appendNode__Lorg_scalajs_dom_Node__T__T__V(document.body, "H1", "Spotify Mood App");
   this.appendNode__Lorg_scalajs_dom_Node__T__T__V(document.body, "p", "Spotify Mood App looks at your song plays and predicts what kind of mood you've been in!");
@@ -5654,6 +5682,28 @@ function $m_sjs_js_defined$() {
   };
   return $n_sjs_js_defined$
 }
+/** @constructor */
+function $c_s_util_DynamicVariable(init) {
+  this.s_util_DynamicVariable__f_v = null;
+  this.s_util_DynamicVariable__f_v = init
+}
+$c_s_util_DynamicVariable.prototype = new $h_O();
+$c_s_util_DynamicVariable.prototype.constructor = $c_s_util_DynamicVariable;
+/** @constructor */
+function $h_s_util_DynamicVariable() {
+  /*<skip>*/
+}
+$h_s_util_DynamicVariable.prototype = $c_s_util_DynamicVariable.prototype;
+$c_s_util_DynamicVariable.prototype.toString__T = (function() {
+  return (("DynamicVariable(" + this.s_util_DynamicVariable__f_v) + ")")
+});
+var $d_s_util_DynamicVariable = new $TypeData().initClass({
+  s_util_DynamicVariable: 0
+}, false, "scala.util.DynamicVariable", {
+  s_util_DynamicVariable: 1,
+  O: 1
+});
+$c_s_util_DynamicVariable.prototype.$classData = $d_s_util_DynamicVariable;
 function $f_s_util_control_NoStackTrace__fillInStackTrace__jl_Throwable($thiz) {
   var this$1 = $m_s_util_control_NoStackTrace$();
   if (this$1.s_util_control_NoStackTrace$__f__noSuppression) {
@@ -6915,6 +6965,39 @@ function $m_s_Array$() {
     $n_s_Array$ = new $c_s_Array$()
   };
   return $n_s_Array$
+}
+/** @constructor */
+function $c_s_Console$() {
+  this.s_Console$__f_outVar = null;
+  $n_s_Console$ = this;
+  this.s_Console$__f_outVar = new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_out);
+  new $c_s_util_DynamicVariable($m_jl_System$Streams$().jl_System$Streams$__f_err);
+  new $c_s_util_DynamicVariable(null)
+}
+$c_s_Console$.prototype = new $h_O();
+$c_s_Console$.prototype.constructor = $c_s_Console$;
+/** @constructor */
+function $h_s_Console$() {
+  /*<skip>*/
+}
+$h_s_Console$.prototype = $c_s_Console$.prototype;
+$c_s_Console$.prototype.out__Ljava_io_PrintStream = (function() {
+  return $as_Ljava_io_PrintStream($n(this.s_Console$__f_outVar).s_util_DynamicVariable__f_v)
+});
+var $d_s_Console$ = new $TypeData().initClass({
+  s_Console$: 0
+}, false, "scala.Console$", {
+  s_Console$: 1,
+  O: 1,
+  s_io_AnsiColor: 1
+});
+$c_s_Console$.prototype.$classData = $d_s_Console$;
+var $n_s_Console$;
+function $m_s_Console$() {
+  if ((!$n_s_Console$)) {
+    $n_s_Console$ = new $c_s_Console$()
+  };
+  return $n_s_Console$
 }
 /** @constructor */
 function $c_s_LowPriorityImplicits() {
@@ -9027,10 +9110,28 @@ var $d_ju_concurrent_ExecutionException = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_ju_concurrent_ExecutionException.prototype.$classData = $d_ju_concurrent_ExecutionException;
-function $p_Lras_spotify_redirectToSpotifyAuthorise$__redirectToAuthCodeFLow__T__V($thiz, ClientId) {
+function $as_Lras_spotify_model_AuthResponse(obj) {
+  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "ras.spotify.model.AuthResponse"))
+}
+function $isArrayOf_Lras_spotify_model_AuthResponse(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lras_spotify_model_AuthResponse)))
+}
+function $asArrayOf_Lras_spotify_model_AuthResponse(obj, depth) {
+  return (($isArrayOf_Lras_spotify_model_AuthResponse(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lras.spotify.model.AuthResponse;", depth))
+}
+function $as_Lras_spotify_model_UserProfile(obj) {
+  return ((false || (obj === null)) ? obj : $throwClassCastException(obj, "ras.spotify.model.UserProfile"))
+}
+function $isArrayOf_Lras_spotify_model_UserProfile(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lras_spotify_model_UserProfile)))
+}
+function $asArrayOf_Lras_spotify_model_UserProfile(obj, depth) {
+  return (($isArrayOf_Lras_spotify_model_UserProfile(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lras.spotify.model.UserProfile;", depth))
+}
+function $p_Lras_spotify_redirectToSpotifyAuthorise$__redirectToAuthCodeFLow__T__T($thiz, ClientId) {
   var verifier = $p_Lras_spotify_redirectToSpotifyAuthorise$__generateCodeVerifier__T($thiz);
   var challenge = $p_Lras_spotify_redirectToSpotifyAuthorise$__generateCodeChallenge__T__T($thiz, verifier);
-  window.localStorage.setItem("verifier", verifier);
+  window.localStorage.setItem("verifier", ("" + verifier));
   var params = new URLSearchParams();
   params.append("client_id", ("" + ClientId));
   params.append("response_type", "code");
@@ -9041,7 +9142,7 @@ function $p_Lras_spotify_redirectToSpotifyAuthorise$__redirectToAuthCodeFLow__T_
   $thiz.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl.search = $dp_toString__T($n(params));
   window.location.href = $dp_toString__T($n($thiz.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl));
   var urlParams = new URLSearchParams($as_T(window.location.search));
-  $as_T(urlParams.get("code"))
+  return $as_T(urlParams.get("code"))
 }
 function $p_Lras_spotify_redirectToSpotifyAuthorise$__generateCodeVerifier__T($thiz) {
   var this$1 = $n($n($m_s_util_Random$().alphanumeric__sci_LazyList()).take__I__sci_LazyList(128));
@@ -9060,6 +9161,60 @@ function $p_Lras_spotify_redirectToSpotifyAuthorise$__generateCodeChallenge__T__
 function $p_Lras_spotify_redirectToSpotifyAuthorise$__base64encode__s_concurrent_Future__T($thiz, hashedData) {
   return $f_T__replaceAll__T__T__T($n($f_T__replaceAll__T__T__T($n($f_T__replaceAll__T__T__T($n($as_T(window.btoa($n(hashedData).toString__T()))), "/=/g", "")), "/+/g", "-")), "///g", "_")
 }
+function $p_Lras_spotify_redirectToSpotifyAuthorise$__getAccessToken__T__T__V($thiz, ClientId, code) {
+  var verifier = $as_T(window.localStorage.getItem("verifier"));
+  var params = new URLSearchParams();
+  params.append("client_id", ("" + ClientId));
+  params.append("grant_type", "authorization_code");
+  params.append("code", ("" + code));
+  params.append("redirect_uri", ("" + $thiz.Lras_spotify_redirectToSpotifyAuthorise$__f_RedirectUri));
+  params.append("code_verifier", ("" + verifier));
+  var result = fetch("https://accounts.spotify.com/api/token", (() => {
+    var params$1 = null;
+    params$1 = params;
+    var this$4 = {};
+    var a = $m_Lorg_scalajs_dom_HttpMethod$().Lorg_scalajs_dom_HttpMethod$__f_POST;
+    this$4.method = a;
+    var superClass$$2 = Headers;
+    var a$1 = ((superClass$$1) => (() => {
+      var outer = null;
+      outer = this$4;
+      var this$8 = new superClass$$1();
+      return this$8
+    }))(superClass$$2)();
+    this$4.headers = a$1;
+    var a$2 = params$1;
+    this$4.body = a$2;
+    return this$4
+  })());
+  var accessTokenRes = $n($m_sjs_js_Thenable$ThenableOps$().toFuture$extension__sjs_js_Thenable__s_concurrent_Future(result)).toString__T();
+  var accessToken = $n($as_Lras_spotify_model_AuthResponse(JSON.parse(accessTokenRes))).AccessTokenResponse__T();
+  window.localStorage.setItem("access_token", accessToken)
+}
+function $p_Lras_spotify_redirectToSpotifyAuthorise$__fetchProfile__V($thiz) {
+  var token = $as_T(window.localStorage.getItem("access_token"));
+  var result = fetch("https://api.spotify.com/v1/me", (() => {
+    var token$1 = null;
+    token$1 = token;
+    var this$4 = {};
+    var a = $m_Lorg_scalajs_dom_HttpMethod$().Lorg_scalajs_dom_HttpMethod$__f_GET;
+    this$4.method = a;
+    var superClass$$2 = Headers;
+    var token$1$2$1 = token$1;
+    var a$1 = ((superClass$$1, token$1$2) => (() => {
+      var outer = null;
+      var token$1$1 = null;
+      outer = this$4;
+      token$1$1 = token$1$2;
+      var this$8 = new superClass$$1();
+      return this$8
+    }))(superClass$$2, token$1$2$1)();
+    this$4.headers = a$1;
+    return this$4
+  })());
+  var profileRes = $n($m_sjs_js_Thenable$ThenableOps$().toFuture$extension__sjs_js_Thenable__s_concurrent_Future(result)).toString__T();
+  $as_Lras_spotify_model_UserProfile(JSON.parse(profileRes))
+}
 /** @constructor */
 function $c_Lras_spotify_redirectToSpotifyAuthorise$() {
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId = null;
@@ -9068,7 +9223,7 @@ function $c_Lras_spotify_redirectToSpotifyAuthorise$() {
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl = null;
   $n_Lras_spotify_redirectToSpotifyAuthorise$ = this;
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId = "c597644c918c4f008e1cb6f073a7b4fc";
-  this.Lras_spotify_redirectToSpotifyAuthorise$__f_RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html";
+  this.Lras_spotify_redirectToSpotifyAuthorise$__f_RedirectUri = "http://localhost:63342/callback";
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_Scope = "user-read-private user-read-email";
   this.Lras_spotify_redirectToSpotifyAuthorise$__f_AuthUrl = new URL("https://accounts.spotify.com/authorize")
 }
@@ -9079,6 +9234,18 @@ function $h_Lras_spotify_redirectToSpotifyAuthorise$() {
   /*<skip>*/
 }
 $h_Lras_spotify_redirectToSpotifyAuthorise$.prototype = $c_Lras_spotify_redirectToSpotifyAuthorise$.prototype;
+$c_Lras_spotify_redirectToSpotifyAuthorise$.prototype.updateUI__V = (function() {
+  var urlCode = $p_Lras_spotify_redirectToSpotifyAuthorise$__redirectToAuthCodeFLow__T__T(this, this.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId);
+  var this$2 = $m_s_Console$();
+  var this$3 = $n(this$2.out__Ljava_io_PrintStream());
+  this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V((urlCode + "\n"));
+  $p_Lras_spotify_redirectToSpotifyAuthorise$__getAccessToken__T__T__V(this, this.Lras_spotify_redirectToSpotifyAuthorise$__f_ClientId, urlCode);
+  $p_Lras_spotify_redirectToSpotifyAuthorise$__fetchProfile__V(this);
+  var profile = (void 0);
+  var this$5 = $m_s_Console$();
+  var this$6 = $n(this$5.out__Ljava_io_PrintStream());
+  this$6.java$lang$JSConsoleBasedPrintStream$$printString__T__V((profile + "\n"))
+});
 $c_Lras_spotify_redirectToSpotifyAuthorise$.prototype.productPrefix__T = (function() {
   return "redirectToSpotifyAuthorise"
 });
@@ -13581,6 +13748,15 @@ $c_Ljava_io_PrintStream.prototype.println__T__V = (function(s) {
   this.print__T__V(s);
   this.java$lang$JSConsoleBasedPrintStream$$printString__T__V("\n")
 });
+function $as_Ljava_io_PrintStream(obj) {
+  return (((obj instanceof $c_Ljava_io_PrintStream) || (obj === null)) ? obj : $throwClassCastException(obj, "java.io.PrintStream"))
+}
+function $isArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ljava_io_PrintStream)))
+}
+function $asArrayOf_Ljava_io_PrintStream(obj, depth) {
+  return (($isArrayOf_Ljava_io_PrintStream(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ljava.io.PrintStream;", depth))
+}
 /** @constructor */
 function $c_Ljava_nio_StringCharBuffer(_capacity, _csq, _csqOffset, _initialPosition, _initialLimit) {
   this.Ljava_nio_Buffer__f__capacity = 0;

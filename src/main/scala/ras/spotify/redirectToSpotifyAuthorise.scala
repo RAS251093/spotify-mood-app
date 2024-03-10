@@ -1,25 +1,27 @@
 package ras.spotify
 
 import org.scalajs.dom
-import org.scalajs.dom.idb.Request
-import org.scalajs.dom.{Headers, HttpMethod, RequestInit, URL, URLSearchParams, document, fetch, window}
+import org.scalajs.dom.{Headers, HttpMethod, RequestInit, URL, URLSearchParams, fetch}
+import ras.spotify.model.{AuthResponse, UserProfile}
 
 import scala.util.Random
 import scala.concurrent._
 import scala.scalajs.js
 import scala.scalajs.js.typedarray.byteArray2Int8Array
+import ExecutionContext.Implicits.global
+import scala.scalajs.js.JSON
 
 case object redirectToSpotifyAuthorise {
   val ClientId = "c597644c918c4f008e1cb6f073a7b4fc"
-  val RedirectUri = "http://localhost:63342/spotify-mood-app/ras/index.html"
+  val RedirectUri = "http://localhost:63342/callback"
   val Scope = "user-read-private user-read-email"
   val AuthUrl = new URL("https://accounts.spotify.com/authorize")
 
-  private def redirectToAuthCodeFLow(ClientId: String): Unit = {
+  private def redirectToAuthCodeFLow(ClientId: String): String = {
     val verifier = generateCodeVerifier()
     val challenge = generateCodeChallenge(verifier)
 
-    dom.window.localStorage.setItem("verifier", verifier)
+    dom.window.localStorage.setItem("verifier", s"$verifier")
 
     val params = new URLSearchParams()
     params.append("client_id", s"$ClientId")
@@ -30,9 +32,9 @@ case object redirectToSpotifyAuthorise {
     params.append("redirect_uri", s"$RedirectUri")
 
     AuthUrl.search = params.toString
-    window.location.href = AuthUrl.toString
-    val urlParams = new URLSearchParams(window.location.search)
-    val urlCode = urlParams.get("code")
+    dom.window.location.href = AuthUrl.toString
+    val urlParams = new URLSearchParams(dom.window.location.search)
+    urlParams.get("code")
   }
 
   private def generateCodeVerifier(): String = {
@@ -53,15 +55,57 @@ case object redirectToSpotifyAuthorise {
       .replaceAll("///g", "_")
   }
 
-/*  private def getAccessToken(ClientId: String, code: String): Future[String] = {
-    //TODO: Get access token for code
+  private def getAccessToken(ClientId: String, code: String): Unit = {
+    val verifier = dom.window.localStorage.getItem("verifier")
+
+    val params = new URLSearchParams()
+    params.append("client_id", s"$ClientId")
+    params.append("grant_type", "authorization_code")
+    params.append("code", s"$code")
+    params.append("redirect_uri", s"$RedirectUri")
+    params.append("code_verifier", s"$verifier")
+
+    val result = fetch(
+      "https://accounts.spotify.com/api/token",
+      new RequestInit {
+        method = HttpMethod.POST
+        headers = new Headers {
+          js.Array(
+            js.Array("Content-Type", "application/x-www-form-urlencoded")
+          )
+        }
+        body = params
+      }
+    )
+    val accessTokenRes = result.toFuture.toString
+    val accessToken = js.JSON.parse(accessTokenRes).asInstanceOf[AuthResponse].AccessTokenResponse
+    dom.window.localStorage.setItem("access_token", accessToken)
   }
 
-  private def fetchProfile(token: String): Future[Unit] = {
-    //TODO: Call web API
-  }*/
+  private def fetchProfile(): Unit = {
+    val token = dom.window.localStorage.getItem("access_token")
+
+    val result = fetch(
+      "https://api.spotify.com/v1/me",
+      new RequestInit {
+        method = HttpMethod.GET
+        headers = new Headers {
+          js.Array(
+            js.Array("Authorization", s"Bearer ${token}")
+          )
+        }
+      }
+    )
+
+    val profileRes = result.toFuture.toString
+    val profile = js.JSON.parse(profileRes).asInstanceOf[UserProfile]
+  }
 
   def updateUI(): Unit = {
-    redirectToAuthCodeFLow(ClientId)
+    val urlCode = redirectToAuthCodeFLow(ClientId)
+    println(urlCode)
+    getAccessToken(ClientId, urlCode)
+    val profile = fetchProfile()
+    println(profile)
   }
 }

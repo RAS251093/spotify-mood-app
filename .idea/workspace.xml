@@ -4,19 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a37d3714-3d80-484e-9179-7363398a8d7d" name="Changes" comment="add Spotify request user auth">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/ras/spotify/model/AuthResponse.scala" afterDir="false" />
+    <list default="true" id="a37d3714-3d80-484e-9179-7363398a8d7d" name="Changes" comment="Add authentication response JSON model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ras/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ras/spotify/model/AuthResponse.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/spotify/model/AuthResponse.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/ras/spotify/redirectToSpotifyAuthorise.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/spotify/redirectToSpotifyAuthorise.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/ras/ui/BuildUI.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/ras/ui/BuildUI.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise$.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise$.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise$.sjsir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/spotify/redirectToSpotifyAuthorise.sjsir" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/ui/BuildUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/ui/BuildUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/ras/ui/BuildUI.sjsir" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/ras/ui/BuildUI.sjsir" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/spotify-mood-app-fastopt/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/spotify-mood-app-fastopt/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/spotify-mood-app-fastopt/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/spotify-mood-app-fastopt/main.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.13/zinc/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/zinc/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/scalaJSClassNamesOnClasspath/data" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/scalaJSClassNamesOnClasspath/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/fastLinkJS/_global/streams/in-cache" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fastLinkJS/_global/streams/in-cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/fastLinkJS/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/fastLinkJS/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/incOptions/_global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/scalaJSIR/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/scalaJSIR/_global/streams/out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1708977476481</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add authentication response JSON model">
+      <created>1709228725419</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709228725419</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +149,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add codeChallenge" />
     <MESSAGE value="add Spotify request user auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Spotify request user auth" />
+    <MESSAGE value="Add authentication response JSON model" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add authentication response JSON model" />
   </component>
 </project>
